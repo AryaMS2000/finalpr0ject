@@ -1,0 +1,56 @@
+<head>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+    </style>
+</head>
+<body>
+<div align-content="center">
+        
+    <img src="static\logo.jpg"  />
+   
+   
+  </div>
+
+{% block content %}
+<!-- Begin page content -->
+       
+      {% if workers %}           
+            <h1>Workers Details</h1>
+               <table>
+               <tr>
+                  <th>Id</th>
+                  <th>Name</th>
+                  <th>Gender</th>
+                  <th>Address</th>
+                 
+               </tr>
+               {% for e in workers %}
+                  <tr>
+                     <td>{{ e.workerid }}</td>
+                     <td>{{ e.name}}</td>
+                     <td>{{ e.gender }}</td>
+                     <td>{{ e.address }}</td>
+                     
+                  </tr>
+               {% endfor %}
+               </table>
+   
+         {% endif %}
+      </div>
+   </main>
+</body>
+{% endblock %} 
