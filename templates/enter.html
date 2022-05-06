@@ -2,11 +2,19 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Pre-Safety Predicter </title>
+
 <style>
 * {
   box-sizing: border-box;
 }
 
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -18,6 +26,11 @@ input[type=text], select, textarea {
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;
+}
+.header {
+  overflow: hidden;
+  background-color: #ef5d5d;
+  padding: 20px 10px;
 }
 
 input[type=submit] {
@@ -70,13 +83,13 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-    <div align-content="center">
+    <div align-content="center" class="header">
         
-        <img src="static\logo.jpg"  />
-       
+      <a href='/'> <img src="static\logo.jpg" width="150" height="150" alt="Go to home"/></a>
        
       </div>
-<h2>Worker Details Form</h2>
+      <div style="padding:20px">
+<h1>Worker Details Form</h1>
 
 
 <div class="containers">
@@ -127,17 +140,7 @@ input[type=submit]:hover {
         </div>
       </div>
      
-          <!-- <label for="Smoking">Smoking</label>
-        </div>
-      <label class="container">Yes
-        <input type="radio" name="radio" checked>
-        <span class="check"></span>
-      </label>
-      <label class="container">No
-        <input type="radio" name="radio">
-        <span class="check"></span>
-      </label> 
-      </div>-->
+          
       <div class="row">
         <div class="col-25">
           <label for="smoking">Smoking</label>
@@ -166,6 +169,6 @@ input[type=submit]:hover {
     </div>
   </form>
 </div>
-
+</div>
 </body>
 </html>
