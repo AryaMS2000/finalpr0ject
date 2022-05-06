@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-Safety Predicter</title>
+    <style>
+  .header {
+  overflow: hidden;
+  background-color: #ef5d5d;
+  padding: 20px 10px;
+}
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<!-- <body bgcolor=#a3cfb4> -->
+<body>
+    <div  class="header">
+       
+        <a href='/'> <img src="static\logo.jpg" width="150" height="150" alt="Go to home"/></a>
+        
+      </div>
+    <center>
+
+        <!-- <h1>  PREDICTION PAGE </h1> -->
+    <br><br>
+    {%if data ==0 %}
+    <h1> Worker is ALLOWED to enter the sewer</h1>  
+    <img src="static\thumbsup.jpg" width="300" height="300" alt="thumbsup image"/>
+
+    {%else%}
+    <h1>Worker is NOT ALLOWED to enter the sewer</h1>
+    <img src="static\cross.png" width="300" height="300" alt="wrong"/>
+    
+    {%endif%}
+
+    
+
+    </center>
+
+</body>
+
+</html>
